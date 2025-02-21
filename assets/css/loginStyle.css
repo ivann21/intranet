@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Contenedor del login */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Título del formulario */
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    color: #444;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Estilos para los campos de entrada */
+.login-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-size: 0.9rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+}
+
+/* Estilos para el botón de submit */
+.login-container button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #6a11cb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-container button:hover {
+    background-color: #2575fc;
+    transform: translateY(-2px);
+}
+
+.login-container button:active {
+    transform: translateY(0);
+}
+
+/* Estilos para el mensaje de error */
+.error-message {
+    color: #ff4757;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Estilos para el enlace de registro */
+.register-link {
+    display: block;
+    margin-top: 1.5rem;
+    color: #6a11cb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.register-link:hover {
+    color: #2575fc;
+    text-decoration: underline;
+}
+/* Estilos para el botón de cerrar sesión */
+.btn-cerrar-sesion {
+    padding: 0.8rem 1.5rem;
+    background-color: #6a11cb; /* Color morado */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cerrar-sesion:hover {
+    background-color: #2575fc; /* Color azul al hacer hover */
+    transform: translateY(-2px);
+}
+
+.btn-cerrar-sesion:active {
+    transform: translateY(0);
+}

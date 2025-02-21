@@ -1,0 +1,165 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative; /* Añade esto para posicionar correctamente el botón */
+}
+
+/* Barra de navegación */
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #6a11cb;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+th {
+    background: #6a11cb;
+    color: white;
+}
+
+/* Formularios */
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+form input:focus, form textarea:focus, form select:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+}
+form button {
+    width: 100%;
+    padding: 10px;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+form button:hover {
+    background: #2575fc;
+    transform: translateY(-2px);
+}
+form button:active {
+    transform: translateY(0);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* Estilos para el contenedor de acciones del usuario (Cerrar Sesión) */
+.user-actions {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/* Estilos para el botón de cerrar sesión */
+.btn-cerrar-sesion {
+    padding: 0.5rem 1rem;
+    background-color: #ff4d4d; /* Color rojo */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cerrar-sesion:hover {
+    background-color: #ff1a1a; /* Rojo más oscuro al pasar el mouse */
+    transform: translateY(-2px);
+}
+
+.btn-cerrar-sesion:active {
+    transform: translateY(0);
+}
