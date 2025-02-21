@@ -4,6 +4,16 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+// Verificar si el usuario ha iniciado sesión y tiene el rol de alumno
+if (!isset($_SESSION['username'])) {
+    // Si no ha iniciado sesión, redirigir al login
+    header("Location: /modules/auth/login.php");
+    exit();
+} elseif ($_SESSION['role'] !== 'profesor' || $_SESSION['role'] !== 'admin') {
+    echo "<script>alert('No tienes permiso para acceder a esta área.'); window.location.href = '/index.php';</script>";
+    exit(); // Detener la ejecución del script
+}
+
 // Incluir la configuración de la base de datos y las plantillas
 require_once __DIR__ . '/../../config/config.php';
 require_once __DIR__ . '/../../config/database.php';
